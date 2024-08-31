@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saint</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <meta name="theme-color" content="#2A2D31">
+    <meta property="og:title" content="@saint" />
+    <meta property="og:description"
+      content="Visit the profile for **@saint**" />
+    <meta property="og:image"
+      content="https://talk-ws.github.io/-/images/saint/avatar.png" />
+
+    <meta property="og:url" content="https://talk-ws.github.io/-/@saint" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/saint/poster.png" alt="Background Image"
+        class="background-image">
+      <div class="left-sidebar"></div>
+      <div class="center-profile">
+        <img src="images/saint/banner.png" alt="Banner Image" class="banner">
+        <img src="images/saint/avatar.png" alt="Profile Image"
+          class="profile-image">
+        <div class="username-box"> @saint <a href="settings.html"
+            class="settings-icon">
+            <i class="fas fa-cog"></i>
+          </a>
+          <a href="report.html" class="report-icon">
+            <i class="fas fa-flag"></i>
+          </a>
+        </div>
+        <div class="biography-box"> skibidi https://discord.gg/corrupted </div>
+        <div class="feed">
+          <div class="post-box">
+            <img src="images/saint/avatar.png" alt="Post Profile Image"
+              class="post-profile-image">
+            <div class="post-content">
+              <div class="post-username">saint</div>
+              <div class="post-text">i love python</div>
+            </div>
+          </div>
+          <div class="post-box">
+            <img src="images/saint/avatar.png" alt="Post Profile Image"
+              class="post-profile-image">
+            <div class="post-content">
+              <div class="post-username">saint</div>
+              <div class="post-text">js lowk sucks </div>
+            </div>
+          </div>
+          <div class="post-box">
+            <img src="images/saint/avatar.png" alt="Post Profile Image"
+              class="post-profile-image">
+            <div class="post-content">
+              <div class="post-username">saint</div>
+              <div class="post-text">https://docs.python.org/</div>
+            </div>
+          </div>
+          <div class="post-box">
+            <img src="images/saint/avatar.png" alt="Post Profile Image"
+              class="post-profile-image">
+            <div class="post-content">
+              <div class="post-username">saint</div>
+              <div class="post-text">I am actually so skibidi its not even funny
+                at this point, bro, like, epic, dude, 99</div>
+            </div>
+          </div>
+          <div class="post-box">
+            <img src="images/saint/avatar.png" alt="Post Profile Image"
+              class="post-profile-image">
+            <div class="post-content">
+              <div class="post-username">saint</div>
+              <div class="post-text">afnksdgksfjgijfigojdifjgodfg MY EAR HURTSSS
+                DAFKDGOSDOIGNIOSDJGIOSDJGI</div>
+            </div>
+          </div>
+          <div class="post-box">
+            <img src="images/saint/avatar.png" alt="Post Profile Image"
+              class="post-profile-image">
+            <div class="post-content">
+              <div class="post-username">saint</div>
+              <div class="post-text">hi RIKAA</div>
+            </div>
+          </div>
+        </div>
+        <div class="socials">
+          <a href="https://twitter.com/absolute" target="_blank"
+            class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://discord.com/1255959858734301277" target="_blank"
+            class="social-icon">
+            <i class="fab fa-discord"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://tiktok.com/@faceprint" target="_blank"
+            class="social-icon">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://github.com/resoluteness" target="_blank"
+            class="social-icon">
+            <i class="fab fa-github"></i>
+            <div class="right-sidebar"></div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function convertUrlsToLinks() {
+                const elements = document.querySelectorAll(".biography-box, .post-text");
+                
+                elements.forEach(element => {
+                    const text = element.innerHTML;
+                    const newText = text.replace(/(https:\/\/[^\s<]+)/g, '<a href="$1" target="_blank">$1</a>');
+                    element.innerHTML = newText;
+                });
+            }
+
+            convertUrlsToLinks();
+        });
+    </script>
+    </body>
+  </html>

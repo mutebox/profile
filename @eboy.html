@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>eboy</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <meta name="theme-color" content="#2A2D31">
+        <meta property="og:title" content="@eboy" />
+        <meta property="og:description"
+            content="Visit the profile for **@eboy**" />
+        <meta property="og:image"
+            content="https://talk-ws.github.io/-/images/eboy/avatar.png" />
+
+        <meta property="og:url" content="https://talk-ws.github.io/-/@eboy" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+    </head>
+    <body>
+        <div class="container">
+            <img src="images/eboy/poster.png" alt="Background Image"
+                class="background-image">
+            <div class="left-sidebar"></div>
+            <div class="center-profile">
+                <img src="images/eboy/banner.png" alt="Banner Image"
+                    class="banner">
+                <img src="images/eboy/avatar.png" alt="Profile Image"
+                    class="profile-image">
+                <div class="username-box"> @eboy
+                </div>
+                <div class="biography-box">skibidi</div>
+                <div class="feed">
+                    <div class="post-box">
+                        <img src="images/eboy/avatar.png"
+                            alt="Post Profile Image"
+                            class="post-profile-image">
+                        <div class="post-content">
+                            <div class="post-username">eboy</div>
+                            <div class="post-text">i love invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-box">
+                        <img src="images/eboy/avatar.png"
+                            alt="Post Profile Image"
+                            class="post-profile-image">
+                        <div class="post-content">
+                            <div class="post-username">eboy</div>
+                            <div class="post-text">invalid is my personal femboy
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a href="https://twitter.com/" target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://discord.com/1199178701271732255"
+                        target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/schoolraider"
+                        target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a
+                        href="https://tiktok.com/@zlucoo"
+                        target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-github"></i>
+                        <div class="right-sidebar"></div>
+                    </div>
+                </div>
+            </div>
+            <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function convertUrlsToLinks() {
+                const elements = document.querySelectorAll(".biography-box, .post-text");
+                
+                elements.forEach(element => {
+                    const text = element.innerHTML;
+                    const newText = text.replace(/(https:\/\/[^\s<]+)/g, '<a href="$1" target="_blank">$1</a>');
+                    element.innerHTML = newText;
+                });
+            }
+
+            convertUrlsToLinks();
+        });
+    </script>
+        </body>
+    </html>

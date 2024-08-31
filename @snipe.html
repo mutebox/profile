@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>snipe</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <meta name="theme-color" content="#2A2D31">
+        <meta property="og:title" content="@snipe" />
+        <meta property="og:description"
+            content="Visit the profile for **@snipe**" />
+        <meta property="og:image"
+            content="https://talk-ws.github.io/-/images/snipe/avatar.png" />
+
+        <meta property="og:url" content="https://talk-ws.github.io/-/@snipe" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+    </head>
+    <body>
+        <div class="container">
+            <img src="images/snipe/poster.png" alt="Background Image"
+                class="background-image">
+            <div class="left-sidebar"></div>
+            <div class="center-profile">
+                <img src="images/snipe/banner.png" alt="Banner Image"
+                    class="banner">
+                <img src="images/snipe/avatar.png" alt="Profile Image"
+                    class="profile-image">
+                <div class="username-box"> @snipe
+                </div>
+                <div class="biography-box">23 year old entrepeneur w/ 3
+                    kids</div>
+                <div class="feed">
+                    <div class="post-box">
+                        <img src="images/snipe/avatar.png"
+                            alt="Post Profile Image"
+                            class="post-profile-image">
+                        <div class="post-content">
+                            <div class="post-username">snipe</div>
+                            <div class="post-text">Hi joni
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-box">
+                        <img src="images/snipe/avatar.png"
+                            alt="Post Profile Image"
+                            class="post-profile-image">
+                        <div class="post-content">
+                            <div class="post-username">snipe</div>
+                            <div class="post-text">Hi kai
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-box">
+                        <img src="images/snipe/avatar.png"
+                            alt="Post Profile Image"
+                            class="post-profile-image">
+                        <div class="post-content">
+                            <div class="post-username">snipe</div>
+                            <div
+                                class="post-text">come cop sets 😦</div>
+                        </div>
+                    </div>
+                    <div class="post-box">
+                        <img src="images/snipe/avatar.png"
+                            alt="Post Profile Image"
+                            class="post-profile-image">
+                        <div class="post-content">
+                            <div class="post-username">snipe</div>
+                            <div class="post-text">):</div>
+                        </div>
+                    </div>
+                    <div class="post-box">
+                        <img src="images/snipe/avatar.png"
+                            alt="Post Profile Image"
+                            class="post-profile-image">
+                        <div class="post-content">
+                            <div class="post-username">snipe</div>
+                            <div class="post-text">im a sigma
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a href="https://twitter.com/" target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://discord.com/1118630652200366191"
+                        target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/imafashiondemon"
+                        target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a
+                        href="https://tiktok.com/@MS4wLjABAAAAn8GC4O8-FTSv8TvAdKAjFjlH2cz0zHR0e_IVUhrcLPiH5a1Kr4XvsLeuXDG8sqIL"
+                        target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-github"></i>
+                        <div class="right-sidebar"></div>
+                    </div>
+                </div>
+            </div>
+            <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function convertUrlsToLinks() {
+                const elements = document.querySelectorAll(".biography-box, .post-text");
+                
+                elements.forEach(element => {
+                    const text = element.innerHTML;
+                    const newText = text.replace(/(https:\/\/[^\s<]+)/g, '<a href="$1" target="_blank">$1</a>');
+                    element.innerHTML = newText;
+                });
+            }
+
+            convertUrlsToLinks();
+        });
+    </script>
+        </body>
+    </html>
